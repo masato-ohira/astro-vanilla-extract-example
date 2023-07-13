@@ -36,6 +36,41 @@ export const spaces = {
   96: '24rem',
 }
 
+export const sizes = {
+  max: 'max-content',
+  min: 'min-content',
+  full: '100%',
+  '3xs': '14rem',
+  '2xs': '16rem',
+  xs: '20rem',
+  sm: '24rem',
+  md: '28rem',
+  lg: '32rem',
+  xl: '36rem',
+  '2xl': '42rem',
+  '3xl': '48rem',
+  '4xl': '56rem',
+  '5xl': '64rem',
+  '6xl': '72rem',
+  '7xl': '80rem',
+  '8xl': '90rem',
+}
+
+export const containers = {
+  sm: '640px',
+  md: '768px',
+  lg: '1024px',
+  xl: '1280px',
+  '2xl': '1440px',
+}
+
+export const shadows = {
+  sm: '0px 0px 4px 1px rgba(0,0,0, 0.08)',
+  base: '0 0 6px 1px rgba(0,0,0, 0.08)',
+  md: '0px 0px 8px 1px rgba(0,0,0, 0.08)',
+  lg: '0px 0px 14px 2px rgba(0,0,0, 0.08)',
+}
+
 export const pxVw = (size: number) => {
   let rate = 100 / 1920
   return `${ceil(rate * size, 4)}vw`

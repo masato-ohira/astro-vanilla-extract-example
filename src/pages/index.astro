@@ -1,6 +1,6 @@
 ---
-// import SpotList from '@/components/views/spot/SpotList.astro'
 import Layout from '@/layouts/Layout.astro'
+import { indexCss } from '@/components/views/TopPage.css'
 
 const meta = {
   title: 'DemoSite',
@@ -8,6 +8,7 @@ const meta = {
 ---
 
 <Layout meta={meta}>
-  <p>OK</p>
-  <!-- <SpotList /> -->
+  <div class={indexCss.box}>
+    <p>Index Page</p>
+  </div>
 </Layout>

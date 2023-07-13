@@ -1,30 +1,23 @@
 import { MyIcon } from '@/components/icons/MyIcon'
-import {
-  header,
-  headerIcon,
-  headerLink,
-  headerLogo,
-  headerMenu,
-  heroBody,
-} from './MyHeader.css'
+import { headerCss } from './MyHeader.css'
 
 export const MyHeader = () => {
   return (
-    <div className={header}>
+    <div className={headerCss.header}>
       <div className='hero is-small'>
-        <div className={heroBody}>
-          <div className={headerLogo}>
-            <div className={headerIcon}>
+        <div className={headerCss.wrap}>
+          <div className={headerCss.logo}>
+            <div className={headerCss.icon}>
               <MyIcon name={'react'} />
             </div>
             <div>
-              <a className={headerLink} href='/'>
+              <a className={headerCss.link} href='/'>
                 DemoSite
               </a>
             </div>
           </div>
 
-          <div className={headerMenu}>
+          <div className={headerCss.menu}>
             <MyIcon name={'menu'} />
           </div>
         </div>

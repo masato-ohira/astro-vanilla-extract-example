@@ -1,6 +1,9 @@
 ---
+import '@/styles/global.scss'
+import { MyContainer } from '@/components/ui/MyContainer'
 import { MyFooter } from '@/components/ui/MyFooter'
 import { MyHeader } from '@/components/ui/MyHeader'
+import { style } from '@vanilla-extract/css'
 // import MyHeader from '@/components/ui/MyHeader.astro'
 
 export interface Props {
@@ -22,10 +25,10 @@ const { meta } = Astro.props
     <meta name='generator' content={Astro.generator} />
     <title>{meta.title}</title>
 
-    <link
+    <!-- <link
       rel='stylesheet'
       href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'
-    />
+    /> -->
     <link rel='preconnect' href='https://fonts.googleapis.com' />
     <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
     <link
@@ -36,7 +39,9 @@ const { meta } = Astro.props
   <body>
     <MyHeader />
     <main>
-      <slot />
+      <MyContainer>
+        <slot />
+      </MyContainer>
     </main>
     <MyFooter />
   </body>
